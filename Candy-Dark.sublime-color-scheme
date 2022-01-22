@@ -1,0 +1,881 @@
+/*
+	> version : 1.01.22
+	> support_us : rahulksharma199r@gmail.com
+*/
+
+{
+	"name" : "Candy-Dark",
+	"author" : "Rahul Sharma",
+	"description" : "Candy is multicolor and eye catching color-scheme, Is for who loves color and specially made for Web Developer",
+
+	"variables" : {
+		"green1" : "#92FF5C",
+		"green2" : "#80FF41",
+		"green3" : "#5cfc00ff",
+		"green4" : "#4BE000",
+		"green5" : "#3DB800",
+		"green6" : "#22D343",
+		"green7" : "#1AA333",
+		"green8" : "#406029",
+
+		"red1" : "#ff5555",
+		"red2" : "#F51921",
+		"red3" : "#ef2929",
+		"red4" : "#F6282E",
+		"red5" : "#F5141B",
+		"red6" : "#EB0A11",
+		"light-red1" : "#FA898D",
+
+		"yellow1" : "#ffe680ff",
+	    "yellow2" : "#E6DA1B",
+	    "yellow3" : "#EFCA08",
+	    "yellow4" : "#F49F0A",
+
+	    "grey1" : "#ADADAD",
+	    "grey2" : "#999999",
+	    "grey3" : "#858585",
+	    "grey4" : "#707070",
+	    "grey5" : "#5C5C5C",
+
+	    "blue1" : "#00CCCC",
+	    "blue2" : "#0092CC",
+	    "blue3" : "#0076F5",
+	    "blue4" : "#1E44FF",
+	    "blue5" : "#312AFF",
+
+	    "orange1" : "#F59866",
+	    "orange2" : "#F37E3F",
+	    "orange3" : "#F2712C",
+	    "orange4" : "#F06419",
+	    "orange5" : "#ff6600",
+	    "orange6" : "#D3530D",
+
+	    "pink1" : "#FF4574",
+	    "pink2" : "#FF3366",
+	    "pink3" : "#FF1F57",
+	    "pink4" : "#FF0A47",
+	    "pink5" : "#F5003D",
+
+	    "white1" : "#f1f1f1",
+	    "white2" : "#f2f2f2",
+	    "white3" : "#e1e1e1",
+	    "white4" : "#DCDCDC",
+
+	    "black1" : "#",
+	    "black2" : "#",
+	    "black3" : "#",
+
+	    "indigo1" : "#cd87deff",
+	    "indigo2" : "#8d5fd3ff",
+	    "indigo3" : "#5a2ca0ff",
+	    "indigo4" : "#852FD5FF",
+	    "indigo5" : "#672178ff",
+
+	    "purple1" : "#CDAAEE",
+	    "purple2" : "#B988E7",
+	    "purple3" : "#A567E0",
+	    "purple4" : "#9145D9",
+	    "purple5" : "#7D2ACB",
+
+	    "spring-green1" : "#5BFF92",
+	    "yellow-crayola" : "#FFF282",
+	    "sliver-sand" : "#BDC0C1",
+	    "beau-blue" : "#BFD7EA",
+	    "violet-web" : "#E985DF",
+	    "medium-slate-blue" : "#7E75FF",
+	    "blue-grey" : "#5695C8",
+	    "yellow-mustered" : "#DEBA2E",
+	    "lime" : "#57ff34",
+	    "green-cyan" : "#00ca7e"
+	},
+
+	"globals" : {
+		"background": "#0A0B0B",
+		"foreground": "#bfbdb6",
+		"invisibles": "#bfbdb64d",
+		"caret": "var(yellow-crayola)",
+		"block_caret": "#e6b4504d",
+		"line_highlight": "#161a24",
+		"accent": "#e6b450",
+		"popup_css": "\n      html, body {\n        background-color: #141821;\n        color: #bfbdb6;\n        --mdpopups-font-mono: \"PragmataPro Mono Liga\", \"sf mono\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n        --mdpopups-bg: #141821;\n        --mdpopups-link: #59c2ff;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(89,194,255, .7);\n      }\n    ",
+		"gutter": "#0A0B0B",
+		"gutter_foreground": "#6c738099",
+		"line_diff_width": "2.5",
+		"line_diff_added": "color(var(green2) a(0.85))",
+		"line_diff_modified": "color(var(violet-web) a(0.75))",
+		"line_diff_deleted": "color(var(red3) a(0.85))",
+		"selection": "color(var(medium-slate-blue) a(0.2))",
+		"selection_border": "var(blue2)",
+		"selection_border_width": "1",
+		"inactive_selection": "#80b5ff26",
+		"inactive_selection_border": "#80b5ff26",
+		"selection_corner_style": "round",
+		"selection_corner_radius": "3",
+		"highlight": "#e6b45066",
+		"find_highlight": "color(var(yellow-crayola) a(0.2))",
+		"find_highlight_foreground": "var(yellow4)",
+		"guide": "#6c73804d",
+		"active_guide": "#6c738080",
+		"stack_guide": "#6c738066",
+		"shadow": "#10141c4d",
+		"shadow_width": "3"
+	},
+	"rules" : [
+		{
+			"name" : "Comments",
+			"scope" : "comment",
+			"foreground" : "var(grey4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : String",
+			"scope" : "meta.string.js",
+			"foreground" : "var(light-red1)"
+		},
+		{
+			"name" : "JS : Number",
+			"scope" : "meta.number.integer.decimal.js, constant.numeric.value.js",
+			"foreground" : "color(var(orange5) l(60%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Keyword",
+			"scope" : "keyword.declaration.js",
+			"foreground" : "color(var(green2) l(70%))",
+			"font_style" : "bold italic"
+		},
+		{
+			"name" : "JS : Constant Keyword",
+			"scope" : "variable.language.this.js, keyword.operator.word.new.js, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js",
+			"foreground" : "color(var(red4) l(+ 2%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Assign and Terminate",
+			"scope" : "keyword.operator.assignment.js, punctuation.terminator.statement.js, meta.block.js punctuation.section.block.begin.js, meta.block.js punctuation.section.block.end.js",
+			"foreground" : "var(yellow-crayola)"
+		},
+		{
+			"name" : "JS : Arithmetic/Logical",
+			"scope" : "keyword.operator.arithmetic.js, keyword.operator.logical.js",
+			"foreground" : "color(var(red4))",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "JS : Built In",
+			"scope" : "support.class.builtin.js, support.constant.builtin.js",
+			"foreground" : "var(orange2)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Built in Call Method",
+			"scope" : "meta.function-call.method.js support.function.builtin.js",
+			"foreground" : "var(spring-green1)",
+			"font_style" : "italic"
+		},
+		// JS : Comparision
+		{
+			"name" : "JS : Comparision",
+			"scope" : "keyword.operator.comparison.js",
+			"foreground" : "var(yellow3)",
+			"font_style" : "bold"
+		},
+		// JS : function declaration
+		{
+			"name" : "JS : Function Definition",
+			"scope" : "keyword.declaration.function.js",
+			"foreground" : "var(purple4)",
+			"font_style" : "bold italic"
+		},
+		{
+			"name" : "JS : Function Name",
+			"scope" : "entity.name.function.js",
+			"foreground" : "var(blue2)"
+		},
+		{
+			"name" : "JS : Function Name()",
+			"scope" : "meta.function.parameters.js punctuation.section.group.begin.js, meta.function.parameters.js punctuation.section.group.end.js, meta.function.parameters.js punctuation.separator.parameter.function.js",
+			"foreground" : "var(blue3)"
+		},
+		{
+			"name" : "JS : Function Prameters",
+			"scope" : "meta.function.parameters.js",
+			"foreground" : "var(green-cyan)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Function Call",
+			"scope" : "meta.function-call.js variable.function.js",
+			"foreground" : "var(blue2)"
+		},
+		{
+			"name" : "JS : Function Call ()",
+			"scope" : "meta.function-call.js meta.group.js punctuation.section.group.begin.js, meta.function-call.js meta.group.js punctuation.section.group.end.js",
+			"foreground" : "var(blue3)"
+		},
+		{
+			"name" : "JS : Support Function",
+			"scope" : "support.function.node.js",
+			"foreground" : "color(var(blue2) blend(#0781ff 65% hsl) l(+ 5%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Varibale Function",
+			"scope" : "meta.function-call.method.js variable.function.js, meta.function-call.method.js support.function.console.js",
+			"foreground" : "color(var(green2) a(0.9))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Function Method",
+			"scope" : "meta.function-call.method.js meta.group.js punctuation.section.group.begin.js, meta.function-call.method.js meta.group.js punctuation.section.group.end.js",
+			"foreground" : "var(green3)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Function Constructor Call",
+			"scope" : "meta.function-call.constructor.js variable.type.js",
+			"foreground" : "var(violet-web)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "JS : Function Constructor Group",
+			"scope" : "meta.function-call.constructor.js meta.group.js",
+			"foreground" : "color(var(violet-web) s(+ 20%))"
+		},	
+		{
+			"name" : "JS : Class",
+			"scope" : "support.class.js",
+			"foreground" : "var(violet-web)"
+		},
+		{
+			"name" : "JS : Class",
+			"scope" : "meta.class.js keyword.declaration.class.js",
+			"foreground" : "var(orange3)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Class Name",
+			"scope" : "meta.class.js entity.name.class.js",
+			"foreground" : "var(green-cyan)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "JS : Class Constructor",
+			"scope" : "entity.name.function.constructor.js",
+			"foreground" : "var(blue2)",
+		},
+		{
+			"name" : "JS : Storage Modifier",
+			"scope" : "storage.modifier.js",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Type Accessor",
+			"scope" : "storage.type.accessor.js",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+
+		// ----------------------------------
+		{
+			"name" : "JS : Varibale Name",
+			"scope" : "variable.other.readwrite.js",
+			"foreground" : "color(var(blue3) blend(var(green2) 80% hsl) l(50%))"
+		},
+		{
+			"name" : "JS : Sequence",
+			"scope" : "meta.sequence.js",
+			"foreground" : "var(yellow3)"
+		},
+		{
+			"name" : "JS : Object Key",
+			"scope" : "meta.mapping.key.js",
+			"foreground" : "var(yellow1)"
+		},
+		
+		{
+			"name" : "JS : Property Object",
+			"scope" : "meta.property.object.js",
+			"foreground" : "color(var(spring-green1) l(55%))",
+		},
+		{
+			"name" : "JS : Dom Object",
+			"scope" : "support.type.object.dom.js",
+			"foreground" : "var(yellow4)",
+			"font_style" : "bold italic"
+		},
+		// JS Conditional
+		{
+			"name" : "JS : Conditional",
+			"scope" : "meta.conditional.js keyword.control.conditional.if.js, meta.conditional.js keyword.control.conditional.else.js, meta.conditional.js keyword.control.conditional.elseif.js, meta.switch.js keyword.control.conditional.switch.js",
+			"foreground" : "color(var(beau-blue) l(- 20%))",
+			"font_style" : "italic",
+		},
+		{
+			"name" : "JS : Switch [Case]/ [Default]",
+			"scope" : "keyword.control.conditional.case.js, keyword.control.conditional.default.js",
+			"foreground" : "var(yellow-mustered)"
+		},
+		{
+			"name" : "JS : Switch Default",
+			"scope" : "keyword.control.conditional.default.js",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Conditional ()/ {}",
+			"scope" : "meta.conditional.js meta.group.js punctuation.section.group.begin.js, meta.conditional.js meta.group.js punctuation.section.group.end.js, meta.switch.js meta.group.js punctuation.section.group.begin.js, meta.switch.js meta.group.js punctuation.section.group.end.js, meta.conditional.js meta.block.js punctuation.section.block.begin.js, meta.conditional.js meta.block.js punctuation.section.block.end.js, meta.switch.js meta.block.js punctuation.section.block.begin.js, meta.switch.js meta.block.js punctuation.section.block.end.js",
+			"foreground" : "color(var(beau-blue) l(50%))",
+		},
+		// Loops
+		{
+			"name" : "JS : Loop",
+			"scope" : "meta.for.js keyword.control.loop.for.js, meta.while.js keyword.control.loop.while.js, meta.do-while.js keyword.control.loop.do-while.js, meta.do-while.js keyword.control.loop.while.js",
+			"foreground" : "color(var(beau-blue) l(- 20%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Loop ()/{}",
+			"scope" : "meta.for.js meta.group.js punctuation.section.group.js, meta.while.js meta.group.js, meta.do-while.js",
+			"foreground" : "color(var(beau-blue) l(- 35%))",
+		},
+
+		// flow keywords
+		{
+			"name" : "JS : Flow [return, break etc...]",
+			"scope" : "keyword.control.flow.return.js, keyword.control.flow.break.js",
+			"foreground" : "var(orange4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Async",
+			"scope" : "keyword.declaration.async.js",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Flow",
+			"scope" : "keyword.control.flow.await.js",
+			"foreground" : "var(pink1)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JS : Console",
+			"scope" : "support.type.object.console.js",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		
+
+		// REGEX =================
+		{
+			"name" : "Regex : String",
+			"scope" : "string.regexp.js",
+			"foreground" : "color(var(beau-blue) l(- 15%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Regex : Scope",
+			"scope" : "string.regexp.js keyword.other.js",
+			"foreground" : "color(var(beau-blue) l(- 35%))"
+		},
+		{
+			"name" : "Rexex Group (",
+			"scope" : "punctuation.definition.group.begin.regexp, punctuation.definition.group.end.regexp",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "Regex :  Look ahead/behind",
+			"scope" : "meta.assertion.look-ahead.regexp, meta.assertion.look-behind.regexp",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "Regex : Quantifier",
+			"scope" : "keyword.operator.quantifier.regexp, keyword.operator.or.regexp",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Regex : Anchor",
+			"scope" : "keyword.control.anchor.regexp",
+			"foreground" : "var(indigo2)"
+		},
+		{
+			"name" : "Regex : No-capture",
+			"scope" : "punctuation.definition.group.no-capture.regexp",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "Regex : Negitive look ahead/behind",
+			"scope" : "meta.assertion.negative-look-ahead.regexp, meta.assertion.negative-look-behind.regexp",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "Regex : Escape Character",
+			"scope" : "constant.other.character-class.escape.backslash.regexp",
+			"foreground" : "color(var(yellow2))"
+		},
+		{
+			"name" : "Regex : Escape Character",
+			"scope" : "constant.character.escape.backslash.regexp",
+			"foreground" : "color(var(orange2) l(- 7%))"
+		},
+		{
+			"name" : "Regex : []",
+			"scope" : "punctuation.definition.character-class.begin.regexp, punctuation.definition.character-class.end.regexp",
+			"foreground" : "var(green4)"
+		},
+		{
+			"name" : "Regex : [a-b]",
+			"scope" : "constant.other.character-class.range.regexp",
+			"foreground" : "var(green7)"
+		},
+		{
+			"name" : "Regex : [abc]",
+			"scope" : "constant.other.character-class.set.regexp",
+			"foreground" : "color(var(green6))"
+		},
+		{
+			"name" : "Regex : {2, 5}",
+			"scope" : "keyword.operator.quantifier.regexp constant.literal.numeric.regexp",
+			"foreground" : "var(yellow2)"
+		},
+
+		// JSON
+		{
+			"name" : "JSON : ALL",
+			"scope" : "source.json",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "JSON : {}",
+			"scope" : "punctuation.section.mapping.begin.json, punctuation.section.mapping.end.json",
+			"foreground" : "color(var(green1) alpha(0.75))"
+		},
+		{
+			"name" : "JSON : [:]",
+			"scope" : "punctuation.separator.mapping.key-value.json",
+			"foreground" : "color(var(green1) alpha(0.75))"
+		},
+		{
+			"name" : "JSON : [,]",
+			"scope" : "punctuation.separator.sequence.json",
+			"foreground" : "color(var(green1) alpha(0.75))"
+		},
+		{
+			"name" : "JSON : [,] inside {} ",
+			"scope" : "punctuation.separator.mapping.pair.json",
+			"foreground" : "color(var(green1) alpha(0.75))"
+		},
+		{
+			"name" : "JSON : []",
+			"scope" : "punctuation.section.sequence.begin.json, punctuation.section.sequence.end.json",
+			"foreground" : "var(purple3)"
+		},
+		{
+			"name" : "JSON : KEY String",
+			"scope" : "meta.mapping.key.json string.quoted.double.json",
+			"foreground" : "color(var(blue1) alpha(1)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JSON : String Definition",
+			"scope" : "meta.mapping.key.json punctuation.definition.string.begin.json, meta.mapping.key.json punctuation.definition.string.end.json",
+			"foreground" : "color(var(blue1) alpha(0.75)"
+		},
+		{
+			"name" : "JSON : NUMBER",
+			"scope" : "source.json meta.mapping.value.json meta.number.integer.decimal.json constant.numeric.value.json",
+			"foreground" : "var(orange4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JSON : Boolean",
+			"scope" : "meta.mapping.value.json constant.language.boolean.json, meta.mapping.value.json constant.language.null.json",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JSON : VALUE String",
+			"scope" : "source.json meta.mapping.value.json string.quoted.double.json",
+			"foreground" : "color(var(pink1) l(+ 2%)"
+		},
+		{
+			"name" : "JSON : String Definition Value",
+			"scope" : "source.json meta.mapping.value.json punctuation.definition.string.begin.json, source.json meta.mapping.value.json punctuation.definition.string.end.json",
+			"foreground" : "color(var(pink1) l(- 5%)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "JSON : INVALID",
+			"scope" : "source.json meta.mapping.json invalid.illegal.expected-mapping-key.json, source.json meta.mapping.json invalid.illegal.expected-mapping-separator.json, source.json meta.mapping.value.json meta.sequence.json invalid.illegal.expected-sequence-separator.json",
+			"foreground" : "var(red2)",
+			"font_style": "italic underline"
+		},
+		{
+			"name" : "JSON : []",
+			"scope" : "source.json meta.mapping.value.json meta.sequence.json punctuation.section.sequence.begin.json, source.json meta.mapping.value.json meta.sequence.json punctuation.section.sequence.end.json",
+			"foreground" : "var(blue2)"
+		},
+
+		// CSS
+		{
+			"name" : "CSS : *",
+			"scope" : "meta.selector.css variable.language.wildcard.asterisk.css",
+			"foreground" : "var(orange2)",
+			"font_style" : "bold italic"
+		},
+		{
+			"name" : "CSS : Pseudo Class Definition :",
+			"scope" : "meta.selector.css punctuation.definition.pseudo-class.css",
+			"foreground" : "var(yellow-crayola)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "CSS : Pseudo Name Selector like :root",
+			"scope" : "meta.selector.css entity.other.pseudo-class.css",
+			"foreground" : "var(yellow-mustered)"
+		},
+		{
+			"name" : "CSS : Tag Name Selector",
+			"scope" : "meta.selector.css entity.name.tag.html.css",
+			"foreground" : "color(var(purple3) a(1))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : Class Selector",
+			"scope" : "meta.selector.css entity.other.attribute-name.class.css",
+			"foreground" : "var(green2)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "CSS : #id",
+			"scope" : "entity.other.attribute-name.id.css punctuation.definition.entity.css",
+			"foreground" : "color(var(blue1) a(0.75))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : ID Selector",
+			"scope" : "meta.selector.css entity.other.attribute-name.id.css",
+			"foreground" : "color(var(blue1) a(1))",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "CSS : Property Name",
+			"scope" : "meta.property-list.css meta.block.css meta.property-name.css support.type.property-name.css",
+			"foreground" : "color(var(blue1) alpha(0.85))"
+		},
+		{
+			"name" : "CSS : Property Value",
+			"scope" : "meta.property-value.css",
+			"foreground" : "var(yellow4)"
+		},
+		{
+			"name" : "CSS : Constant Property Value",
+			"scope" : "meta.property-list.css meta.block.css meta.property-value.css support.constant.property-value.css",
+			"foreground" : "var(pink1)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : Number",
+			"scope" : "meta.property-value.css constant.numeric.value.css, meta.group.css constant.numeric.value.css",
+			"foreground" : "var(orange5)",
+		},
+		{
+			"name" : "CSS : Number Suffix",
+			"scope" : "meta.property-value.css constant.numeric.suffix.css, meta.group.css constant.numeric.suffix.css",
+			"foreground" : "var(orange2)",
+		},
+		{
+			"name" : "CSS : ::",
+			"scope" : "meta.selector.css punctuation.definition.pseudo-element.css",
+			"foreground" : "var(yellow-crayola)"
+		},
+		{
+			"name" : "CSS : ::after",
+			"scope" : "meta.selector.css entity.other.pseudo-element.css",
+			"foreground" : "var(yellow-mustered)"
+		},
+		{
+			"name" : "CSS : !important",
+			"scope" : "meta.property-list.css meta.block.css meta.property-value.css keyword.other.important.css",
+			"foreground" : "var(indigo4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : @rule",
+			"scope" : "keyword.control.directive.css punctuation.definition.keyword.css",
+			"foreground" : "color(var(orange4) alpha(1))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : media/import etc.",
+			"scope" : "keyword.control.directive.css",
+			"foreground" : "color(var(orange2) alpha(1))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : animation-name",
+			"scope" : "meta.at-rule.keyframe.css entity.other.animation-name.css",
+			"foreground" : "var(green2)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "CSS : Media Constant",
+			"scope" : "meta.at-rule.media.css support.constant.media.css",
+			"foreground" : "var(yellow2)"
+		},
+		{
+			"name" : "CSS : CSS Logic",
+			"scope" : "keyword.operator.logic.css",
+			"foreground" : "var(red3)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : attribute-name",
+			"scope" : "meta.selector.css meta.attribute-selector.css meta.brackets.css entity.other.attribute-name.css",
+			"foreground" : "var(yellow3)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : Keyword operator",
+			"scope" : "meta.selector.css keyword.operator.combinator.css",
+			"foreground" : "var(blue2)"
+		},
+		{
+			"name" : "CSS : function Name",
+			"scope" : "meta.property-value.css meta.function-call.identifier.css",
+			"foreground" : "var(indigo4)"
+		},
+		{
+			"name" : "CSS : Operator",
+			"scope" : "meta.group.css keyword.operator.arithmetic.css",
+			"foreground" : ["var(yellow3)", "var(blue3)"],
+			"font_style" : "bold"
+		},
+		{
+			"name" : "CSS : Color",
+			"scope" : "meta.property-value.css support.constant.color.w3c.standard.css",
+			"foreground" : "color(var(orange4) alpha(1))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : Invalid",
+			"scope" : "invalid.illegal.css",
+			"foreground" : "var(red5)",
+			"font_style" : "italic glow stippled_underline"
+		},
+		{
+			"name" : "CSS : Group Property",
+			"scope" : "meta.group.css support.type.property-name.css",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "CSS : Varibale",
+			"scope" : "variable.other.custom-property.css",
+			"foreground" : "var(blue2)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "CSS : Custom Property like --color_1: ",
+			"scope" : "meta.property-list.css meta.block.css meta.property-name.css entity.other.custom-property.css",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "CSS : from to/ 0% 100%",
+			"scope" : "keyword.other.selector.css, meta.selector.css constant.numeric.value.css",
+			"foreground" : "var(purple4)",
+		},
+		{
+			"name" : "CSS : Number Selector Suffix ",
+			"scope" : "meta.selector.css constant.numeric.suffix.css",
+			"foreground" : "var(purple3)"
+		},
+		{
+			"name" : "CSS : Escape Character",
+			"scope" : "constant.character.escape.css",
+			"foreground" : "var(purple5)",
+			"font_style" : "italic"
+		},
+
+		// HTML
+		{
+			"name" : "HTML : Basic Text",
+			"scope" : "text.html.basic",
+			"foreground" : ["var(white3)", "var(white4)", "var(grey1)"]
+		},
+		{
+			"name" : "HTML : !DOCTYPE",
+			"scope" : "text.html.basic punctuation.definition.tag.begin.html, text.html.basic punctuation.definition.tag.end.html",
+			"foreground" : "var(yellow-crayola)"
+		},
+		{
+			"name" : "HTML : DOCTYPE",
+			"scope" : "keyword.declaration.doctype.html",
+			"foreground" : "var(red4)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "HTML : html",
+			"scope" : "text.html.basic meta.tag.sgml.doctype.html constant.language.doctype.html",
+			"foreground" : "var(green2)"
+		},
+		{
+			"name" : "HTML : Tag Name",
+			"scope" : "text.html.basic meta.tag.structure.any.html entity.name.tag.structure.any.html",
+			"foreground" : "color(var(orange4) a(1))"
+		},
+		{
+			"name" : "HTML : Tag Name",
+			"scope" : "meta.tag",
+			"foreground" : "color(var(yellow-mustered) a(1))"
+		},
+		{
+			"name" : "HTML : attribute-name",
+			"scope" : "entity.other.attribute-name.class.html, entity.other.attribute-name.html, entity.other.attribute-name.id.html",
+			"foreground" : "var(green2)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "HTML : attribute-name separator",
+			"scope" : "punctuation.separator.key-value.html",
+			"foreground" : "color(var(green1) a(0.75))"
+		},
+		{
+			"name" : "HTML : String",
+			"scope" : "string.quoted.double.html, string.quoted.single.html",
+			"foreground" : "color(var(spring-green1) a(1))"
+		},
+
+
+		// Other Languages
+
+		{
+			"name" : "Other : String",
+			"scope" : "string",
+			"foreground" : "color(var(red1) l(+ 5%))"
+		},
+		{
+			"name" : "Other : Number",
+			"scope" : "constant.numeric",
+			"foreground" : "color(var(orange5) l(60%))",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Other : Built In Constant",
+			"scope" : "constant.language",
+			"foreground" : "var(orange4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Other : Varibale",
+			"scope" : "variable",
+			"foreground" : "color(var(blue1))"
+		},
+		{
+			"name" : "Other : User Defined Constant",
+			"scope" : "constant.character, constant.other",
+			"foreground" : "var(indigo3)"
+		},
+		{
+			"name" : "Other : Keyword",
+			"scope" : "keyword",
+			"foreground" : "color(var(beau-blue) s(+ 45%) l(-  5%))"
+		},
+		{
+			"name" : "Other : Storage",
+			"scope" : "storage",
+			"foreground" : "var(blue1)"
+		},
+		{
+			"name" : "Other : Storage Type",
+			"scope" : "storage.type",
+			"foreground" : "var(purple3)",
+			"font_style" : "bold italic"
+		},
+		{
+			"name" : "Other : Class Name",
+			"scope" : "entity.name.class",
+			"foreground" : "var(yellow4)"
+		},
+		{
+			"name" : "Other : Inherited Class",
+			"scope" : "entity.other.inherited-class",
+			"foreground" : "var(green4)"
+		},
+		{
+			"name" : "Other : Function Name",
+			"scope" : "entity.name.function",
+			"foreground" : "var(blue2)"
+		},
+		{
+			"name" : "Other : Function Parameters",
+			"scope" : "variable.parameter",
+			"foreground" : "var(orange4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Other : Library Function",
+			"scope" : "support.function",
+			"foreground" : "var(blue2)"
+		},
+		{
+			"name" : "Other : Library Constant",
+			"scope" : "support.constant",
+			"foreground" : "var(orange3)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "Other : Library Class Type",
+			"scope" : "support.type, support.class",
+			"foreground" : "var(purple3)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "PHP : <?php ?>",
+			"scope" : "punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php",
+			"foreground" : "var(yellow-crayola)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "PHP : $",
+			"scope" : "punctuation.definition.variable.php",
+			"foreground" : "var(green3)"
+		},
+		{
+			"name" : "PHP : Varibale Other",
+			"scope" : "variable.other.php",
+			"foreground" : "var(green1)"
+		},
+		{
+			"name" : "PHP : Varibale Function",
+			"scope" : "variable.function.php",
+			"foreground" : "var(yellow4)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "PHP : Global Variables",
+			"scope" : "variable.other.global.php, variable.other.global.safer.php",
+			"foreground" : "var(yellow4)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "PHP : Sql Embedded",
+			"scope" : "keyword.other.DML.sql",
+			"foreground" : "var(green-cyan)",
+			"font_style" : "bold"
+		},
+		{
+			"name" : "PHP : Sql Embedded variable",
+			"scope" : "source.sql.embedded.php",
+			"foreground" : "var(beau-blue)",
+			"font_style" : "italic"
+		},
+		{
+			"name" : "PHP : Sql Embedded Logical",
+			"scope" : "keyword.operator.logical.sql",
+			"foreground" : ["var(green-cyan)", "var(yellow-crayola)"],
+			"font_style" : "bold italic"
+		}
+	]
+}
