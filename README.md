@@ -7,6 +7,7 @@ Candy Dark is a color scheme with lots of eye catching color and specially desig
   > Rahulksharma199r@gmail.com
 > Donate
   > @upi -> [rahulksharma199r@okicici]
+  > @paypal -> [PayPal.Me/rahulsharma199r]
 
 # Screenshots
 
