@@ -1,5 +1,5 @@
 # Candy-Dark
-Candy Dark is a color scheme with lots of eye catching color and specially designed for HTML, CSS, JAVASCRIPT.
+Candy Dark is a sublime text editor color scheme with lots of eye catching color and specially designed for HTML, CSS, JAVASCRIPT.
 
 > Support
   > Rahulksharma199r@gmail.com

@@ -1,0 +1,19 @@
+{
+  "name": "Candy Dark Color Scheme",
+  "version": "1.0.1",
+  "description": "A dark and sweet color scheme for Sublime Text.",
+  "author": "Rahul Sharma",
+  "homepage": "https://github.com/rahulsharmagg/Candy-Dark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahulsharmagg/Candy-Dark.git"
+  },
+  "license": "MIT",
+  "keywords": ["sublime", "color scheme", "dark", "theme", "candy", "colorful", "colourful"],
+  "bugs": {
+    "url": "https://github.com/yourusername/Candy-Dark-Color-Scheme/issues"
+  },
+  "engines": {
+    "sublime": ">=3000"
+  }
+}

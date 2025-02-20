@@ -1,12 +1,12 @@
 /*
-	> version : 1.01.22
+	> version : 1.0.1
 	> support_us : rahulksharma199r@gmail.com
 */
 
 {
-	"name" : "Candy-Dark",
+	"name" : "Candy Dark Color Scheme",
 	"author" : "Rahul Sharma",
-	"description" : "Candy is multicolor and eye catching color-scheme, Is for who loves color and specially made for Web Developer",
+	"description" : "Candy is a vibrant and visually appealing color scheme designed for those who have a passion for colors, specifically tailored for web developers.",
 
 	"variables" : {
 		"green1" : "#92FF5C",
